@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="andressa.andressa.ifsc.PerguntaController">
+	<children>
+		<AnchorPane prefHeight="400.0" prefWidth="600.0"
+			AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<AnchorPane prefHeight="109.0" prefWidth="600.0"
+					style="-fx-background-color: #12564c;" AnchorPane.leftAnchor="0.0"
+					AnchorPane.rightAnchor="0.0">
+					<children>
+						<Text fill="WHITE" layoutX="132.0" layoutY="62.0"
+							strokeType="OUTSIDE" strokeWidth="0.0"
+							text="Criar Tema de Discução">
+							<font>
+								<Font size="21.0" />
+							</font>
+						</Text>
+						<ImageView fitHeight="109.0" fitWidth="144.0"
+							pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@imagens/allup.png" />
+							</image>
+						</ImageView>
+					</children>
+				</AnchorPane>
+				<AnchorPane layoutX="-139.0" layoutY="293.0"
+					minHeight="0.0" minWidth="0.0" prefHeight="293.0" prefWidth="600.0"
+					AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+					AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="107.0">
+					<children>
+						<TextArea layoutX="209.0" layoutY="99.0"
+							prefHeight="126.0" prefWidth="363.0" AnchorPane.topAnchor="99.0" />
+						<CheckBox layoutX="51.0" layoutY="247.0"
+							mnemonicParsing="false" prefHeight="17.0" prefWidth="264.0"
+							text="Li e concordo com as politicas do fórum"
+							AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="51.0" />
+						<Button layoutX="456.0" layoutY="243.0"
+							mnemonicParsing="false"
+							style="-fx-background-color: #12564c; -fx-background-radius: 50PX;"
+							text="PERGUNTAR" textFill="WHITE" />
+						<Text layoutX="58.0" layoutY="112.0" strokeType="OUTSIDE"
+							strokeWidth="0.0" text="Adicionar rascunho da tentativa:"
+							wrappingWidth="143.13671875">
+							<font>
+								<Font name="Arial Black" size="12.0" />
+							</font>
+						</Text>
+						<Text layoutX="58.0" layoutY="74.0" strokeType="OUTSIDE"
+							strokeWidth="0.0" text="Adicionar Pergunta:"
+							wrappingWidth="143.13671875">
+							<font>
+								<Font name="Arial Black" size="12.0" />
+							</font>
+						</Text>
+						<TextField layoutX="209.0" layoutY="57.0"
+							prefHeight="25.0" prefWidth="363.0" promptText="Título"
+							AnchorPane.topAnchor="57.0" />
+						<Button layoutX="14.0" layoutY="14.0"
+							mnemonicParsing="false" onAction="#voltar"
+							style="-fx-background-radius: 50PX;" text="VOLTAR"
+							AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+					</children>
+				</AnchorPane>
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>

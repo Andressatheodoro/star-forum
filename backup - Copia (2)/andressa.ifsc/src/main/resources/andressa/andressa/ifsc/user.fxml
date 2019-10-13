@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1056.0" style="-fx-background-color: #ffffff;" translateX="1.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="andressa.andressa.ifsc.UserController">
+	<children>
+      <GridPane layoutX="21.0" layoutY="9.0" prefHeight="559.0" prefWidth="1035.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="9.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="632.0" minWidth="0.0" prefWidth="592.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="946.0" minWidth="0.0" prefWidth="0.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="946.0" minWidth="0.0" prefWidth="417.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="946.0" minWidth="0.0" prefWidth="26.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="127.0" minHeight="0.0" prefHeight="17.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="518.0" minHeight="10.0" prefHeight="518.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="198.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="518.0" prefWidth="364.0" style="-fx-background-color: #e9e5f0;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <CheckBox layoutX="296.0" layoutY="293.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="145.0" text="Lembre-se de mim" textFill="#380f61" AnchorPane.rightAnchor="0.0" />
+                  <Button alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="435.0" mnemonicParsing="false" onAction="#btregister" prefHeight="25.0" prefWidth="384.0" style="-fx-background-color: trasparent;" text="Criar conta" textFill="#380f61" underline="true" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="0.0">
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </Button>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="418.0" prefHeight="17.0" prefWidth="384.0" text="Ainda não possui conta ?" textFill="#380f61" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="0.0" />
+                  <AnchorPane layoutX="17.0" layoutY="323.0" prefHeight="52.0" prefWidth="384.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Button layoutX="113.0" layoutY="9.0" mnemonicParsing="false" onAction="#btlogin" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: #684d77; -fx-background-radius: 50px;" text="  Entrar" textFill="WHITE" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="109.0">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="17.0" layoutY="54.0" prefHeight="71.0" prefWidth="384.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="4.0" prefHeight="60.0" prefWidth="384.0" text="Entrar" textFill="#6e1d75" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Arial Black" size="39.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+                  <AnchorPane layoutX="16.0" layoutY="170.0" prefHeight="47.0" prefWidth="385.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <TextField fx:id="txtEmail" layoutX="16.0" layoutY="2.0" prefHeight="45.0" prefWidth="385.0" promptText="E-mail" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <padding>
+                              <Insets left="15.0" right="15.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" top="5.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane layoutX="14.0" layoutY="233.0" prefHeight="52.0" prefWidth="387.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <PasswordField fx:id="txtSenha" layoutX="-17.0" layoutY="3.0" prefHeight="45.0" prefWidth="323.0" promptText="Senha" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <padding>
+                              <Insets left="15.0" right="15.0" />
+                           </padding>
+                        </PasswordField>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="421.0" prefWidth="496.0" style="-fx-background-color: #ffffff;" GridPane.rowIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-8.0" layoutY="259.0" prefHeight="60.0" prefWidth="567.0" text="Star Fórum" textFill="#6e1d75" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="8.0">
+                     <font>
+                        <Font name="Arial Black" size="41.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="396.0" fitWidth="396.0" layoutX="34.0" layoutY="-65.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/allup.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="319.0" prefHeight="25.0" prefWidth="504.0" text="Seja bem vindo ao melhor forum do mundo DEV!!" textFill="#380f61" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="2.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutY="339.0" prefHeight="20.0" prefWidth="470.0" text="Aqui vocẽ encontra a maior variedade de respostas para ajudar com suas duvidas ." textFill="#6e1d75" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="395.0" fitWidth="417.0" layoutX="163.0" layoutY="-14.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagens/allup.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+	</children>
+</AnchorPane>
